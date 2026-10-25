@@ -1,0 +1,38 @@
+# Frontend dependencies and generated files
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.vercel/
+
+# Backend Python environment and cache
+backend/venv/
+backend/__pycache__/
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and local configuration
+*.log
+.DS_Store
+.vscode/
+
+# Machine learning model weights
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Datasets and generated outputs
+data/
+datasets/
+outputs/
+
+# Python test and notebook cache
+.pytest_cache/
+.ipynb_checkpoints/
