@@ -6,6 +6,12 @@ The framework combines an image-to-text generation pipeline with a multi-axis va
 
 > **Disclaimer:** This project is intended for research and educational purposes only. It is not a medical device and must not be used for clinical diagnosis or treatment decisions.
 
+## Live Application
+
+- **Live App:** https://neuro-val-3-d.vercel.app/
+- **Backend API:** https://neuroval-3d-api.onrender.com
+- **API Health Check:** https://neuroval-3d-api.onrender.com/api/health
+
 ## Objectives
 
 - Explore automated radiology report generation from 3D brain MRI volumes.
@@ -29,6 +35,32 @@ The project documentation describes an eight-stage pipeline:
 8. **Perturbation Benchmark:** Evaluate validation performance using controlled report errors.
 
 The project reports identify the multi-axis validator and perturbation benchmark as key contributions. Some anatomical-anchoring and explainability components are described as scaffolded or intended for future extension.
+
+## Screenshots
+
+### Home Page
+
+![NeuroVal-3D Home Page](screenshots/main_page.png)
+
+### Live Demo — Report Generation and Validation
+
+![NeuroVal-3D Live Demo](screenshots/demo.png)
+
+### System Architecture
+
+![NeuroVal-3D Architecture](screenshots/architecture.png)
+
+### Results
+
+![NeuroVal-3D Results](screenshots/results.png)
+
+### Benchmark
+
+![NeuroVal-3D Benchmark](screenshots/benchmark.png)
+
+### About
+
+![NeuroVal-3D About](screenshots/about.png)
 
 ## Seven Validation Axes
 
@@ -88,14 +120,21 @@ These figures are results reported in the project documentation. They do not est
 
 ```text
 WEB/
-├── frontend/                 # Next.js dashboard
-├── backend/                  # FastAPI backend
+├── frontend/                  # Next.js dashboard
+├── backend/                   # FastAPI backend
 ├── notebooks/
-│   ├── minor-project1.ipynb  # Reproducible experiment notebook
-│   └── minor-project2.ipynb  # Additional project experiments
+│   ├── minor-project1.ipynb    # Reproducible experiment notebook
+│   └── minor-project2.ipynb    # Additional project experiments
 ├── reports/
 │   ├── PHASE_1_2_REPORT.pdf
 │   └── REVIEW_2_REPORT.pdf
+├── screenshots/
+│   ├── main_page.png
+│   ├── demo.png
+│   ├── architecture.png
+│   ├── results.png
+│   ├── benchmark.png
+│   └── about.png
 ├── .gitignore
 └── README.md
 ```
@@ -157,12 +196,3 @@ The `reports/` directory contains:
 - Some pipeline components remain scaffolded or are intended for future development.
 - Any medical interpretation requires independent review by qualified medical professionals.
 
-## Team
-
-- Naveen Rajdev
-- Pooja Pattar
-- Vikneshwaran Marimuthu
-- Vaishnavi Pagad
-
-**Project Guide:** Prof. Prashant Narayankar  
-**Academic Year:** 2025–2026
